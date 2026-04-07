@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Basics</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f7f7f7;
+        color: #333;
+      }
+      header {
+        background: #4f46e5;
+        color: white;
+        padding: 1.5rem 1rem;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .hero {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .card {
+        background: white;
+        padding: 1.25rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+      }
+      footer {
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Frontend Basics</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero" id="about">
+        <h2>Build modern user interfaces</h2>
+        <p>
+          This simple frontend website demonstrates a clean layout with responsive
+          sections for presenting information, features, and contact details.
+        </p>
+      </section>
+      <section class="grid" id="services">
+        <article class="card">
+          <h3>Responsive Design</h3>
+          <p>Layouts that adapt to different screens with mobile-first styling.</p>
+        </article>
+        <article class="card">
+          <h3>Clean Structure</h3>
+          <p>Organized HTML sections and clear visual hierarchy for easy reading.</p>
+        </article>
+        <article class="card">
+          <h3>Easy Customization</h3>
+          <p>Simple CSS rules that are easy to extend and modify for your project.</p>
+        </article>
+      </section>
+      <section class="hero" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Want to build a frontend project? Start with a strong layout and clear
+          presentation, then expand with interactive components.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 Frontend Basics. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
